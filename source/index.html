@@ -22,10 +22,12 @@
               <a>
                 Фото и видео
               </a>
-            </li class="site-list__item">
+            </li>
+            <li class="site-list__item">
               <a>
                 Форма отзыва
               </a>
+            </li>
             <li class="site-list__item">
               <a>
                 HTML Academy
@@ -36,6 +38,7 @@
       </nav>
       <img class="main-header__welcome-image" src="" width="" height="" alt="Прекрасный вид города">
     </header>
+
     <main class="main-container">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
 
@@ -56,72 +59,84 @@
 
           /* Вопрос: лучше списком или списком определений? (ul/dl?) */
 
-          <dl class="advantage__list">
+          <ol class="advantage__list">
 
-            <div class="advantage-item">
-              <dt class="advantage-item__title">
+            <li class="advantage-item">
+              <b class="advantage-item__title">
                 Настоящий городок
-              </dt>
-              <dd class="advantage-item__description">
+              </b>
+              <p class="advantage-item__description">
                 Седона не аттракцион для туристов, там течёт своя жизнь
-              </dd>
+              </p>
               <img class="advantage-item__image" src="" width="" height="" alt="Прекрасный вид города">
-              <dl class="advantage-item-tips-list">
-                <dt class="advantage-item-tips-list__item-title advantage-item-tips-list__item-title--home">
-                  Жильё
-                </dt>
-                <dd class="advantage-item-tips-list__item-text">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                </dd>
-                <dt class="advantage-item-tips-list__item-title advantage-item-tips-list__item-title--food">
-                  Еда
-                </dt>
-                <dd class="advantage-item-tips-list__item-text">
-                  Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
-                </dd>
-                <dt class="advantage-item-tips-list__item-title advantage-item-tips-list__item-title--souvenirs">
-                  Сувениры
-                </dt>
-                <dd class="advantage-item-tips-list__item-text">
-                  Не только китайского, но и местного производства!
-                </dd>
-              </dl>
-            </div>
-            <div class="advantage-item">
-              <dt class="advantage-item__title">
-                Там есть мост дьявола
-              </dt>
-              <dd class="advantage-item__description">
-                Да, по нему можно пройти! Если Вы осмелитесь, конечно
-              </dd>
-              <img class="advantage-item__image" src="" width="" height="" alt="Прекрасный вид каньона">
-            </div>
-            <div class="advantage-item">
-              <dt class="advantage-item__title">
-                Небольшая площадь
-              </dt>
-              <dd class="advantage-item__description">
-                Все интересные места находятся очень близко
-              </dd>
-            </div>
-            <div class="advantage-item">
-              <dt class="advantage-item__title">
-                Красивая дорога
-              </dt>
-              <dd class="advantage-item__description">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </dd>
-            </div>
-            <div class="advantage-item">
-              <dt class="advantage-item__title">
-                Мало туристов
-              </dt>
-              <dd class="advantage-item__description">
-                Большинство едет в Гранд Каньон и толпится там
-              </dd>
-            </div>
 
-          </dl>
+              <ul class="advantage-tips-list">
+                <li class="advantage-tips-list__item">
+                  <b class="advantage-tips-list__item-title advantage-tips-list__item-title--home">
+                    Жильё
+                  </b>
+                  <p class="advantage-tips-list__item-text">
+                    Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  </p>
+                </li>
+                <li class="advantage-tips-list__item">
+                  <b class="advantage-tips-list__item-title advantage-tips-list__item-title--food">
+                    Еда
+                  </b>
+                  <p class="advantage-tips-list__item-text">
+                    Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                  </p>
+                </li>
+                <li class="advantage-tips-list__item">
+                <b class="advantage-tips-list__item-title advantage-tips-list__item-title--souvenirs">
+                  Сувениры
+                </b>
+                <p class="advantage-tips-list__item-text">
+                  Не только китайского, но и местного производства!
+                </p>
+                </li>
+              </ul>
+
+            </li>
+
+            <li class="advantage-item">
+              <b class="advantage-item__title">
+                Там есть мост дьявола
+              </b>
+              <p class="advantage-item__description">
+                Да, по нему можно пройти! Если Вы осмелитесь, конечно
+              </p>
+              <img class="advantage-item__image" src="" width="" height="" alt="Прекрасный вид каньона">
+            </li>
+
+            <li class="advantage-item">
+              <b class="advantage-item__title">
+                Небольшая площадь
+              </b>
+              <p class="advantage-item__description">
+                Все интересные места находятся очень близко
+              </p>
+            </li>
+
+            <li class="advantage-item">
+              <b class="advantage-item__title">
+                Красивая дорога
+              </b>
+              <p class="advantage-item__description">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </li>
+
+            <li class="advantage-item">
+              <b class="advantage-item__title">
+                Мало туристов
+              </b>
+              <p class="advantage-item__description">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </li>
+
+          </ol>
 
         </div>
       </section>
