@@ -16,3 +16,31 @@
   color: var(--basic-black-light);
   text-transform: uppercase;
 }
+
+.modal__error {
+  width: 320px;
+  height: 280px;
+  display: none;
+}
+
+.modal__correct {
+  width: 320px;
+  height: 323px;
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .modal__error {
+    width: 400px;
+    height: 347px;
+  }
+
+  .modal__correct {
+    width: 640px;
+    height: 347px;
+  }
+}
+
+.modal__open {
+  display: block;
+}

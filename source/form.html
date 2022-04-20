@@ -1,9 +1,9 @@
-n
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -48,74 +48,77 @@ n
     <section>
 
       <form class="form" action="" method="get">
-        <b class="form__title">Оставьте свой отзыв</b>
-        <p class="form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами
-          достопримечательностях</p>
-        <b class="form__title">Представьтесь:</b>
-        <br>
-        <label class="form__label" for="user-name">Имя:</label>
-        <br>
-        <input class="form__input form__input-text-black" type="text" name="username" id="user-name" value="Пётр">
 
-        <label class="form__label" for="user-surname">Фамилия:</label>
-        <br>
-        <input class="form__input form__input-text-black" type="text" name="usersurname" id="user-surname"
-          value="Пустота">
-
-        <label class="form__label" for="user-patronymic">Отчество:</label>
-        <br>
-        <input class="form__input form__input-text-black" type="text" name="userpatronymic" id="user-patronymic"
-          value="Викторович">
-        <br>
-        <b class="form__title">Контактная информация:</b>
-
-        <label class="form__label" for="user-phone">Контактный телефон:</label>
-        <br>
-        <input class="form__input form__input-text-grey" type="tel" name="userphone" id="user-phone"
-          placeholder="Введите телефон">
-
-        <label class="form__label" for="user-email">Электронная почта:</label>
-        <br>
-        <input class="form__input form__input-text-grey" type="email" name="usersemail" id="user-email"
-          placeholder="Введите e-mail">
-        <br>
+        <div class="form__title-wrapper">
+          <b class="form__title">Оставьте свой отзыв</b>
+          <p class="form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами
+            достопримечательностях</p>
+        </div>
+        <div class="form__wrapper-contact">
+          <div class="form__wrapper-user">
+            <b class="form__title">Представьтесь:</b>
+            <label class="form__label" for="user-name">Имя:</label>
+            <input class="form__input form__input-text-black" type="text" name="username" id="user-name" value="Пётр">
+            <label class="form__label" for="user-surname">Фамилия:</label>
+            <input class="form__input form__input-text-black" type="text" name="usersurname" id="user-surname"
+              value="Пустота">
+            <label class="form__label" for="user-patronymic">Отчество:</label>
+            <input class="form__input form__input-text-black" type="text" name="userpatronymic" id="user-patronymic"
+              value="Викторович">
+          </div>
+          <div class="form__wrapper-user">
+            <b class="form__title">Контактная информация:</b>
+            <label class="form__label" for="user-phone">Контактный телефон:</label>
+            <input class="form__input form__input-text-grey" type="tel" name="userphone" id="user-phone"
+              placeholder="Введите телефон">
+            <label class="form__label" for="user-email">Электронная почта:</label>
+            <input class="form__input form__input-text-grey" type="email" name="usersemail" id="user-email"
+              placeholder="Введите e-mail">
+          </div>
+        </div>
         <b class="form__title">Ваше общее впечатление:</b>
-        <br>
-        <input class="form__input-radio" type="radio" name="impression" value="rather positive" id="impression-positive"
-          checked>
-        <label class="form__label-radio" for="impression-positive">Скорее положительное</label>
+        <div class="form__input-radio-wrapper">
+          <input class="form__input-radio visually-hidden" type="radio" name="impression" value="rather positive"
+            id="impression-positive" checked>
+          <label class="form__label-radio" for="impression-positive">Скорее положительное</label>
 
-        <input class="form__input-radio" type="radio" name="impression" value="rather negative"
-          id="impression-negative">
-        <label class="form__label-radio" for="impression-negative">Скорее отрицательное</label>
+          <input class="form__input-radio visually-hidden" type="radio" name="impression" value="rather negative"
+            id="impression-negative">
+          <label class="form__label-radio" for="impression-negative">Скорее отрицательное</label>
 
-        <input class="form__input-radio" type="radio" name="impression" value="rather difficult" id="difficult">
-        <label class="form__label-radio" for="difficult">Затрудняюсь ответить</label>
-        <br>
+          <input class="form__input-radio visually-hidden" type="radio" name="impression" value="rather difficult"
+            id="difficult">
+          <label class="form__label-radio" for="difficult">Затрудняюсь ответить</label>
+        </div>
         <b class="form__title">Посещённые достопримечательности:</b>
+        <div class="form__input-checkbox-wrapper">
+          <input class="form__input-checkbox visually-hidden" type="checkbox" name="attraction-devil's bridge"
+            id="bridge-devile" checked>
+          <label class="form__label-checkbox" for="bridge-devile">Мост Дьявола</label>
 
-        <input class="form__input-checkbox" type="checkbox" name="attraction-devil's bridge" id="bridge-devile" checked>
-        <label class="form__label-checkbox" for="bridge-devile">Мост Дьявола</label>
+          <input class="form__input-checkbox visually-hidden" type="checkbox" name="attraction-mountain bell"
+            id="mountain-bell" checked>
+          <label class="form__label-checkbox" for="mountain-bell">Гора-Колокол</label>
 
-        <input class="form__input-checkbox" type="checkbox" name="attraction-mountain bell" id="mountain-bell" checked>
-        <label class="form__label-checkbox" for="mountain-bell">Гора-Колокол</label>
+          <input class="form__input-checkbox visually-hidden" type="checkbox" name="attraction-slide park"
+            id="slide-park" checked>
+          <label class="form__label-checkbox" for="difficult">Слайд-парк</label>
 
-        <input class="form__input-checkbox" type="checkbox" name="attraction-slide park" id="slide-park" checked>
-        <label class="form__label-checkbox" for="difficult">Слайд-парк</label>
-
-        <input class="form__input-checkbox" type="checkbox" name="attraction-red rocks" id="red-rocks">
-        <label class="form__label-checkbox" for="red-rocks">Красные скалы</label>
-        <br>
+          <input class="form__input-checkbox visually-hidden" type="checkbox" name="attraction-red rocks"
+            id="red-rocks">
+          <label class="form__label-checkbox" for="red-rocks">Красные скалы</label>
+        </div>
         <b class="form__title">Опишите свои эмоции:</b>
         <textarea class="form__input-textarea" name="user-impression-text"
           placeholder="Опишите подробно все свои восторги"></textarea>
-        <br>
-        <button class="form__submit button" type="submit">Отправить отзыв</button>
-        <p class="form__legend">
-          <small>
-            * — Обязательные поля
-          </small>
-        </p>
+        <div class="form__submit-wrapper">
+          <button class="form__submit button" type="submit">Отправить отзыв</button>
+          <p class="form__legend">
+            <small>
+              * — Обязательные поля
+            </small>
+          </p>
+        </div>
       </form>
     </section>
 
@@ -148,13 +151,13 @@ n
 
     </footer>
 
-    <section class="modal">
+    <section class="modal modal__error">
       <h2 class="visually-hidden">Предупреждение о заполнении обязательных полей</h2>
       <b class="modal__title">Что-то пошло не так!</b>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
       <button class="modal__button button" type="submit">OK</button>
     </section>
-    <section class="modal">
+    <section class="modal modal__correct">
       <h2 class="visually-hidden">Сообщение об отправке отзыва</h2>
       <b class="modal__title">Ваш отзыв отправлен!</b>
       <p class="modal__text">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам,

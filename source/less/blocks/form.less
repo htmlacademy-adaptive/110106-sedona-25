@@ -9,6 +9,8 @@
   color: var(--basic-black);
   text-transform: uppercase;
   text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .form__text {
@@ -16,6 +18,16 @@
   line-height: var(--line-height-S);
   color: var(--basic-black-light);
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrapper-contact {
+    display: flex;
+  }
+
+  .form__wrapper-user {
+    flex-grow: 1;
+  }
 }
 
 .form__label {
@@ -38,10 +50,28 @@
 
 .form__input-text-black {
   color: var(--basic-black);
+  font-weight: var(--font-weight-bold);
 }
 
 .form__input-text-grey {
   color: var(--basic-grey-opacity);
+  font-weight: var(--font-weight-bold);
+}
+
+@media (min-width: @tablet-width) {
+  .form__input-radio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__input-radio-wrapper {
+    flex-wrap: nowrap;
+  }
 }
 
 .form__label-radio {
@@ -49,6 +79,22 @@
   line-height: var(--line-height-M);
   font-weight: var(--font-weight-bold);
   color: var(--basic-black);
+}
+
+@media (min-width: @tablet-width) {
+  .form__input-checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__input-checkbox-wrapper {
+    flex-wrap: nowrap;
+  }
 }
 
 .form__label-checkbox {
@@ -68,4 +114,44 @@
   line-height: var(--line-height-M);
   font-weight: var(--font-weight-bold);
   color: var(--basic-black);
+}
+
+@media (min-width: @tablet-width) {
+  .form__input-textarea {
+    width: 648px;
+    height: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__input-textarea {
+    width: 768px;
+    height: 160px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__submit-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+  }
+}
+
+.form__submit {
+  max-width: 281px;
+  height: 58px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__submit {
+    width: 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__submit {
+    width: 384px;
+  }
 }

@@ -12,6 +12,7 @@
 @import "blocks/photo.less";
 @import "blocks/gallery.less";
 @import "blocks/video.less";
+@import "blocks/page.less";
 
 @font-face {
   font-family: "PT Sans";
@@ -19,4 +20,22 @@
     url("../fonts/ptsansbold.woff2") format("woff2"),
     url("../fonts/ptsans.woff") format("woff"),
     url("../fonts/ptsansbold.woff") format("woff");
+}
+
+// Viewports
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
