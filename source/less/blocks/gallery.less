@@ -1,10 +1,32 @@
 .gallery {
   list-style: none;
   outline: 2px solid rgb(243, 92, 11);
+  padding: 0;
 }
 
 .gallery__item {
   outline: 2px solid rgb(239, 243, 11);
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item {
+    width: calc(100% / 2);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__item {
+    width: calc(100% / 3);
+  }
+}
+
+.gallery__item-main {
+  width: 100%;
 }
 
 .gallery__title {

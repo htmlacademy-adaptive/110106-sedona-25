@@ -1,15 +1,32 @@
 .site-list {
+  display: none;
   background-color: var(--basic-blue);
   color: var(--basic-white);
   font-size: var(--size-M);
   line-height: var(--line-height-M);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
-
   outline: 2px solid rgb(42, 165, 58);
+}
+
+.site-list__open {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 56px;
+  }
 }
 
 .site-list__item {
   list-style: none;
-  margin: var(--margin-center);
 }

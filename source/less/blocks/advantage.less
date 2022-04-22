@@ -15,6 +15,36 @@
   line-height: var(--line-height-S);
 }
 
+.advantage__list {
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantage__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .advantage-item__first {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .advantage-item--main {
+    display: flex;
+  }
+
+  .advantage-tips-list {
+    display: flex;
+  }
+
+  .advantage-item__second {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+}
+
 .advantage-item {
   background-color: var(--basic-grey);
   outline: 2px solid rgb(243, 243, 11);
