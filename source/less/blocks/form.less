@@ -82,6 +82,18 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form__label-radio {
+    width: calc(100% / 2);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__label-radio {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: @tablet-width) {
   .form__input-checkbox-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +114,18 @@
   line-height: var(--line-height-M);
   font-weight: var(--font-weight-bold);
   color: var(--basic-black);
+}
+
+@media (min-width: @tablet-width) {
+  .form__label-checkbox {
+    width: calc(100% / 2);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__label-checkbox {
+    width: calc(100% / 3);
+  }
 }
 
 .form__input-textarea {
