@@ -11,7 +11,6 @@
 }
 
 @media (max-width: @mobile-width-only) {
-
   .site-list {
     display: none;
     background-color: var(--basic-blue);
@@ -25,7 +24,7 @@
   }
 
   .site-list__item:not(:last-child) {
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
   }
 
   .site-list__item:last-child {
@@ -46,12 +45,12 @@
 @media (max-width: @mobile-width-only) {
   .site-list__item:hover {
     background-color: var(--basic-blue-hover);
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
   .site-list__item:active {
     background-color: var(--basic-blue-active);
-    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     opacity: 0.3;
     color: var(--basic-black);
   }
