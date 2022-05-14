@@ -1,5 +1,37 @@
 .video {
-  outline: 2px solid rgb(11, 46, 243);
+  padding: 0 20px;
+  border-top: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    border-top: none;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    padding: 0;
+  }
+}
+
+.video__title-wrapper {
+  margin: 17px 8px 38px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .video__title-wrapper {
+    margin: 58px 100px 66px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__title-wrapper {
+    margin: 62px 377px 64px;
+  }
 }
 
 .video__title {
