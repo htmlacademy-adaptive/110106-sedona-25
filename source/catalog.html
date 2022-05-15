@@ -9,7 +9,7 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header main-header__regular">
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/logo.png" width="185" height="96" alt="Город «Седона»">
     </a>
@@ -41,7 +41,7 @@
         </ul>
       </div>
     </nav>
-    <!-- <img class="main-header__welcome-image" src="img/sedona-main.png" width="" height="" alt="Прекрасный вид города"> -->
+    <!-- <img class="main-header__welcome-image" src="img/sedona-main.jpg" width="" height="" alt="Прекрасный вид города"> -->
   </header>
 
   <main class="main-container">
@@ -58,10 +58,14 @@
 
         <li class="gallery__item gallery__item-main">
           <picture class="gallery__photo">
-            <source srcset="img/catalog-main-mobile.png" media="(max-width: 767px)">
-            <source srcset="img/catalog-main-tablet.png" media="(min-width: 768px)">
-            <source srcset="img/catalog-main-desktop.png" media="(min-width: 1200px)">
-            <img class="gallery__photo" src="img/catalog-main-mobile.png" alt="Неродные просторы">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog-main-mobile.jpg 1x, img/catalog-main-mobile@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-main-tablet.jpg 1x, img/catalog-main-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-main-desktop.jpg 1x, img/catalog-main-desktop@2x.jpg 2x">
+            <img class="gallery__photo" src="img/catalog-main-mobile.jpg" srcset="img/catalog-main-mobile@2x.jpg 2x"
+              alt="Неродные просторы">
           </picture>
           <div class="gallery__item-wrapper">
             <div class="gallery__title-wrapper">
@@ -77,10 +81,14 @@
 
         <li class="gallery__item">
           <picture class="gallery__photo">
-            <source srcset="img/catalog-flora-mobile.png" media="(max-width: 767px)">
-            <source srcset="img/catalog-flora-tablet.png" media="(min-width: 768px)">
-            <source srcset="img/catalog-flora-desktop.png" media="(min-width: 1200px)">
-            <img class="gallery__photo" src="img/catalog-flora-mobile.png" alt="Местная растительность">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog-flora-mobile.jpg 1x, img/catalog-flora-mobile@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-flora-tablet.jpg 1x, img/catalog-flora-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-flora-desktop.jpg 1x, img/catalog-flora-desktop@2x.jpg 2x">
+            <img class="gallery__photo" src="img/catalog-flora-mobile.jpg" srcset="img/catalog-flora-mobile@2x.jpg 2x"
+              alt="Местная растительность">
           </picture>
           <div class="gallery__item-wrapper">
             <div class="gallery__title-wrapper">
@@ -95,10 +103,14 @@
         </li>
         <li class="gallery__item">
           <picture class="gallery__photo">
-            <source srcset="img/catalog-forest-mobile.png" media="(max-width: 767px)">
-            <source srcset="img/catalog-forest-tablet.png" media="(min-width: 768px)">
-            <source srcset="img/catalog-forest-desktop.png" media="(min-width: 1200px)">
-            <img class="gallery__photo" src="img/catalog-forest-mobile.png" alt="Дорога на Север">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog-forest-mobile.jpg 1x, img/catalog-forest-mobile@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-forest-tablet.jpg 1x, img/catalog-forest-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-forest-desktop.jpg 1x, img/catalog-forest-desktop@2x.jpg 2x">
+            <img class="gallery__photo" src="img/catalog-forest-mobile.jpg" srcset="img/catalog-forest-mobile@2x.jpg 2x"
+              alt="Дорога на Север">
           </picture>
           <div class="gallery__item-wrapper">
             <div class="gallery__title-wrapper">
@@ -113,10 +125,14 @@
         </li>
         <li class="gallery__item">
           <picture class="gallery__photo">
-            <source srcset="img/catalog-bridge-mobile.png" media="(max-width: 767px)">
-            <source srcset="img/catalog-bridge-tablet.png" media="(min-width: 768px)">
-            <source srcset="img/catalog-bridge-desktop.png" media="(min-width: 1200px)">
-            <img class="gallery__photo" src="img/catalog-bridge-mobile.png" alt="Мост Дьявола">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog-bridge-mobile.jpg 1x, img/catalog-bridge-mobile@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-bridge-tablet.jpg 1x, img/catalog-bridge-tablet@2x.jpg 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-bridge-desktop.jpg 1x, img/catalog-bridge-desktop@2x.jpg 2x">
+            <img class="gallery__photo" src="img/catalog-bridge-mobile.jpg" srcset="img/catalog-bridge-mobile@2x.jpg 2x"
+              alt="Мост Дьявола">
           </picture>
           <div class="gallery__item-wrapper">
             <div class="gallery__title-wrapper">
@@ -141,7 +157,7 @@
           пока они не подорожали в очередной раз!
         </p>
       </div>
-      <video class="video__item" width="100%" height="177" controls="controls" poster="img/video-mobile.jpg">
+      <video class="video__item" controls="controls" poster="img/video-mobile.jpg">
         <source src="" type='video/ogg; codecs="theora, vorbis"'>
         <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
         <source src="" type='video/webm; codecs="vp8, vorbis"'>
