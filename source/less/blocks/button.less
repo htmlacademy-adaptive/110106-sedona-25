@@ -6,5 +6,19 @@
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-blue);
-  outline: 2px solid rgb(242, 74, 194);
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--basic-blue-hover);
+}
+
+.button:active {
+  background-color: var(--basic-blue-active);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: var(--basik-grey-substrate);
+  pointer-events: none;
 }
