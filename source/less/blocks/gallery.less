@@ -1,12 +1,21 @@
 .gallery {
   list-style: none;
-  outline: 2px solid rgb(243, 92, 11);
+  margin: 0;
   padding: 0;
 }
 
 .gallery__item {
-  outline: 2px solid rgb(239, 243, 11);
+  box-sizing: border-box;
+  position: relative;
 }
+
+@media (max-width: @mobile-width-only) {
+  .gallery__item {
+    padding: 24px 20px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .gallery {
@@ -29,6 +38,35 @@
   width: 100%;
 }
 
+.gallery__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__item-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 20px 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__item-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 22px 20px 15px;
+    background-color: transparent;
+    width: 100%;
+    color: var(--basic-white);
+  }
+}
+
 .gallery__title {
   font-size: var(--size-S);
   font-weight: var(--font-weight-bold);
@@ -39,10 +77,50 @@
 .gallery__author {
   font-size: var(--size-S);
   line-height: var(--line-height-S);
+  padding-top: 6px;
+  padding-bottom: 25px;
+  margin: 0;
 }
 
-.gallery__like {
+@media (min-width: @tablet-width) {
+  .gallery__author {
+    padding: 6px 0 0;
+  }
+}
+
+.gallery__like-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.gallery__like-button {
+  background-image: url("../img/icon-like-mobile-tablet.svg");
+  width: 23px;
+  height: 21px;
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__like-button {
+    background-image: url("../img/icon-like-desktop.svg");
+  }
+}
+
+.gallery__like-count {
   font-size: var(--size-S);
-  line-height: var(--line-height-S);
+  line-height: 1em;
   font-weight: var(--font-weight-bold);
+  display: block;
+  padding-left: 14px;
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__like-count {
+    padding-left: 9px;
+  }
+}
+
+.gallery__photo {
+  width: 100%;
 }

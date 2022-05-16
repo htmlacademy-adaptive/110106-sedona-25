@@ -1,5 +1,31 @@
-.photo {
-  outline: 2px solid rgb(243, 243, 11);
+@media (min-width: @tablet-width) {
+  .photo {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.photo__title-wrapper {
+  margin: 33px 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__title-wrapper {
+    margin: 62px 95px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__title-wrapper {
+    margin: 100px 370px 65px;
+  }
 }
 
 .photo__title {
@@ -8,6 +34,9 @@
   font-weight: var(--font-weight-bold);
   color: var(--basic-black);
   text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin: 0;
 }
 
 .photo__text {
@@ -15,4 +44,14 @@
   line-height: var(--line-height-S);
   color: var(--basic-black);
   text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__text {
+    padding-bottom: 30px;
+  }
 }
