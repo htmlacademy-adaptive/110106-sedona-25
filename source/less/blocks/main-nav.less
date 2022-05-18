@@ -39,6 +39,10 @@
   .main-nav--opened .main-nav__list {
     display: block;
   }
+
+  .main-nav--nojs {
+    padding-bottom: 55px;
+  }
 }
 
 .main-nav__toggle::before {
@@ -78,6 +82,30 @@
   display: none;
 }
 
-.main-nav--nojs .main-nav__list {
+.main-nav__logo {
   display: block;
+  width: 185px;
+  height: 96px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--nojs .main-nav__logo {
+    top: calc(100% - 55px);
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+    position: static;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__logo {
+    z-index: 3;
+  }
 }

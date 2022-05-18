@@ -1,31 +1,21 @@
 .main-header {
-  height: 445px;
-  background-image: url("../img/sedona-main-mobile.png");
+  padding-bottom: 390px;
+  background-image: url("../img/sedona-main-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
   position: relative;
+  background-color: rgba(78, 172, 240, 0.39);
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/sedona-main-mobile@2x.png");
-    background-size: 320px auto;
-  }
-}
-
-@media (min-width: @tablet-min-width) {
-  .main-header {
-    background-image: url("../img/sedona-main-tablet.png");
-    height: 574px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/sedona-main-tablet@2x.png");
-      background-size: 768px auto;
-    }
+    background-image: url("../img/sedona-main-mobile@2x.jpg");
+    background-size: 900px auto;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-header {
     background-image: url("../img/sedona-main-dekstop.png");
+    padding-bottom: 518px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/sedona-main-dekstop@2x.png");
@@ -35,51 +25,11 @@
 }
 
 .main-header__regular {
-  background-image: url("../img/sedona-mobile.png");
-  height: 216px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/sedona-mobile@2x.png");
-    background-size: 320px auto;
-  }
-}
-
-@media (min-width: @tablet-min-width) {
-  .main-header__regular {
-    background-image: url("../img/sedona-tablet.png");
-    height: 348px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/sedona-tablet@2x.png");
-      background-size: 768px auto;
-    }
-  }
+  padding-bottom: 158px;
 }
 
 @media (min-width: @tablet-width) {
   .main-header__regular {
-    background-image: url("../img/sedona-dekstop.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/sedona-dekstop@2x.png");
-      background-size: 1200px auto;
-    }
-  }
-}
-
-.main-header__logo {
-  display: block;
-  width: 185px;
-  height: 96px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-@media (min-width: @tablet-width) {
-  .main-header__logo {
-    z-index: 3;
+    padding-bottom: 290px;
   }
 }
