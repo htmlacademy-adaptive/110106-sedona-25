@@ -349,12 +349,20 @@
   background-size: cover;
   width: 100%;
   height: 260px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-bridge.mobile@2x.png");
+  }
 }
 
 @media (min-width: @tablet-width) {
   .advantage-item__image--bridge {
     background-image: url("../img/photo-bridge-tablet.png");
     height: 256px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-bridge.tablet@2x.png");
   }
 }
 
@@ -363,5 +371,9 @@
     background-image: url("../img/photo-bridge-desktop.png");
     width: 100%;
     height: 256px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-bridge.desktop@2x.png");
   }
 }
