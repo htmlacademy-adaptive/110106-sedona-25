@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -111,6 +111,13 @@
         <li class="gallery__item">
           <picture class="gallery__photo">
             <source media="(min-width: 1200px)"
+              srcset="img/catalog-flora-desktop.webp 1x, img/catalog-flora-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-flora-tablet.webp 1x, img/catalog-flora-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog-flora-mobile.webp 1x, img/catalog-flora-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)"
               srcset="img/catalog-flora-desktop.jpg 1x, img/catalog-flora-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/catalog-flora-tablet.jpg 1x, img/catalog-flora-tablet@2x.jpg 2x">
@@ -133,6 +140,13 @@
         <li class="gallery__item gallery__item-wrapper--left">
           <picture class="gallery__photo">
             <source media="(min-width: 1200px)"
+              srcset="img/catalog-forest-desktop.webp 1x, img/catalog-forest-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-forest-tablet.webp 1x, img/catalog-forest-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog-forest-mobile.webp 1x, img/catalog-forest-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)"
               srcset="img/catalog-forest-desktop.jpg 1x, img/catalog-forest-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/catalog-forest-tablet.jpg 1x, img/catalog-forest-tablet@2x.jpg 2x">
@@ -154,6 +168,13 @@
         </li>
         <li class="gallery__item gallery__item-wrapper--left">
           <picture class="gallery__photo">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-bridge-desktop.webp 1x, img/catalog-bridge-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-bridge-tablet.webp 1x, img/catalog-bridge-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)"
+              srcset="img/catalog-bridge-mobile.webp 1x, img/catalog-bridge-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)"
               srcset="img/catalog-bridge-desktop.jpg 1x, img/catalog-bridge-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -207,7 +228,7 @@
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <svg width="24" height="14">
-              <use href="./img/sprite.svg#link-vkontakte"></use>
+              <use href="./img/sprite.svg#icon-vk"></use>
             </svg>
             <span class="visually-hidden">Мы в Вконтакте</span>
           </a>
@@ -215,7 +236,7 @@
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
             <svg width="22" height="18">
-              <use href="./img/sprite.svg#link-telegram"></use>
+              <use href="./img/sprite.svg#icon-tg"></use>
             </svg>
             <span class="visually-hidden">Мы в Телеграме</span>
           </a>
@@ -223,7 +244,7 @@
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
             <svg width="20" height="14">
-              <use href="./img/sprite.svg#link-youtube"></use>
+              <use href="./img/sprite.svg#icon-ytb"></use>
             </svg>
             <span class="visually-hidden">Мы в Ютубе</span>
           </a>
@@ -233,7 +254,7 @@
         <span class="social__copyright__text">Разработано</span>
         <a class="social__copyright__link link-copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="35">
-            <use href="./img/sprite.svg#logo-html"></use>
+            <use href="./img/sprite.svg#htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy</span>
         </a>
