@@ -1,17 +1,44 @@
-.modal {
+.modal__button {
+  font-size: var(--size-M);
+}
+
+.modal-background {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.modal-background::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   content: "";
+  background-color: var(--basic-black);
+  opacity: 0.3;
+  z-index: 3;
+}
+
+.modal-background--open {
+  display: block;
+}
+
+.modal {
+  position: fixed;
   background-color: var(--basic-white);
+  z-index: 4;
 }
 
 .modal__error {
   box-sizing: border-box;
-  display: none;
 }
 
 .modal__correct {
   box-sizing: border-box;
-  display: none;
 }
 
 .modal__title {
@@ -33,7 +60,7 @@
 }
 
 .modal__error .modal__text {
-  margin-top: 28px;
+  margin-top: 26px;
 }
 
 .modal__button-error {
@@ -71,14 +98,14 @@
   .modal__correct {
     width: 320px;
     padding: 39px 37px 30px;
-    top: 441px;
+    top: 401px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   .modal__correct .modal__text {
-    margin-top: 28px;
-    margin-bottom: 51px;
+    margin-top: 26px;
+    margin-bottom: 50px;
   }
 
   .modal__button-correct-wrapper {
@@ -93,12 +120,21 @@
 }
 
 @media (min-width: @tablet-width) {
+  .modal__button {
+    font-size: var(--size-L);
+  }
+
   .modal__error {
     width: 400px;
-    padding: 50px 46px 49px;
-    top: 116px;
+    padding: 52px 46px 49px;
+    top: 283px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 36px;
   }
 
   .modal__button-error {
@@ -111,7 +147,7 @@
 
   .modal__correct {
     width: 640px;
-    padding: 53px 97px 0;
+    padding: 48px 97px 0;
     min-height: 347px;
     top: 162px;
     left: 50%;
@@ -120,6 +156,7 @@
 
   .modal__correct .modal__text {
     margin-bottom: 53px;
+    margin-top: 20px;
   }
 
   .modal__button-correct-wrapper {
@@ -134,6 +171,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .modal__correct .modal__text {
+    margin-top: 24px;
+  }
+
   .modal__error {
     top: 244px;
     left: 50%;
@@ -141,12 +182,9 @@
   }
 
   .modal__correct {
+    padding-top: 46px;
     top: 145px;
     left: 50%;
     transform: translateX(-50%);
   }
-}
-
-.modal__open {
-  display: block;
 }
