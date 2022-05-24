@@ -23,7 +23,7 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header main-header__regular">
+  <header class="main-header main-header--regular">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
       </button>
@@ -33,12 +33,12 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="/">
+            <a class="site-list__link" href="./">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="/catalog.html">
+            <a class="site-list__link" href="./catalog.html">
               Фото и видео
             </a>
           </li>
@@ -57,15 +57,15 @@
     </nav>
     <!-- <img class="main-header__welcome-image" src="img/sedona-main.png" width="" height="" alt="Прекрасный вид города"> -->
 
-    <svg class="welcome-title__sedona-recular">
+    <svg class="welcome-title-sedona-recular">
       <use href="./img/sprite.svg#title-sedona"></use>
     </svg>
 
   </header>
   <main class="main-container">
-    <h1 class="visually-hidden">Форма обратной связи</h1>
     <section>
-      <form class="form" action="" method="get">
+      <h1 class="visually-hidden">Форма обратной связи</h1>
+      <form class="form" action="/action" method="get">
         <div class="form__title-wrapper">
           <b class="form__title form__title--main">Оставьте свой отзыв</b>
           <p class="form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами
@@ -133,30 +133,30 @@
           </b>
           <ul class="form__input-checkbox-wrapper">
             <li class="form__filter-input">
-              <input class="form__input-checkbox visually-hidden" id="devil's bridge" type="checkbox"
-                name="attraction-devil's bridge" checked>
-              <label class="form__label-checkbox" for="devil's bridge">
+              <input class="form__input-checkbox visually-hidden" id="devil-bridge" type="checkbox"
+                name="attraction-devil-bridge" checked>
+              <label class="form__label-checkbox" for="devil-bridge">
                 Мост Дьявола
               </label>
             </li>
             <li class="form__filter-input">
-              <input class="form__input-checkbox visually-hidden" id="mountain bell" type="checkbox"
-                name="attraction-mountain bell" checked>
-              <label class="form__label-checkbox" for="mountain bell">
+              <input class="form__input-checkbox visually-hidden" id="mountain-bell" type="checkbox"
+                name="attraction-mountain-bell" checked>
+              <label class="form__label-checkbox" for="mountain-bell">
                 Гора-Колокол
               </label>
             </li>
             <li class="form__filter-input">
-              <input class="form__input-checkbox visually-hidden" id="slide park" type="checkbox"
-                name="attraction-slide park" checked>
-              <label class="form__label-checkbox" for="slide park">
+              <input class="form__input-checkbox visually-hidden" id="slide-park" type="checkbox"
+                name="attraction-slide-park" checked>
+              <label class="form__label-checkbox" for="slide-park">
                 Слайд-парк
               </label>
             </li>
             <li class="form__filter-input">
-              <input class="form__input-checkbox visually-hidden" id="red rocks" type="checkbox"
+              <input class="form__input-checkbox visually-hidden" id="red-rocks" type="checkbox"
                 name="attraction-red rocks">
-              <label class="form__label-checkbox" for="red rocks">
+              <label class="form__label-checkbox" for="red-rocks">
                 Красные скалы
               </label>
             </li>
@@ -223,7 +223,7 @@
     </footer>
   </main>
   <div class="modal-background">
-    <section class="modal modal__error">
+    <section class="modal modal--error">
       <h2 class="visually-hidden">Предупреждение о заполнении обязательных полей</h2>
       <b class="modal__title">Что-то пошло <br class="tablet-break desktop-break" />не так!</b>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
@@ -231,7 +231,7 @@
     </section>
   </div>
   <div class="modal-background">
-    <section class="modal modal__correct">
+    <section class="modal modal--correct">
       <h2 class="visually-hidden">Сообщение об отправке отзыва</h2>
       <b class="modal__title">Ваш отзыв отправлен!</b>
       <p class="modal__text">Спасибо за Ваше участие, Ваш <br class="mobile-break" />отзыв уже поступил к нам.
