@@ -1,12 +1,22 @@
 @media (min-width: @tablet-width) {
   .site-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "col1 col2 logo col3 col4";
     height: 56px;
     background-color: var(--basic-white);
+  }
+
+  .site-list::before {
+    content: "";
+    display: block;
+    grid-area: logo;
+  }
+
+  .site-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

@@ -42,7 +42,7 @@
               Фото и видео
             </a>
           </li>
-          <li class="site-list__item site-list__item--logo-modifier">
+          <li class="site-list__item">
             <a class="site-list__link">
               Форма отзыва
             </a>
@@ -58,24 +58,22 @@
     <!-- <img class="main-header__welcome-image" src="img/sedona-main.png" width="" height="" alt="Прекрасный вид города"> -->
 
     <svg class="welcome-title__sedona-recular">
-      <use href="./img/sprite.svg#title-sedona-recular"></use>
+      <use href="./img/sprite.svg#title-sedona"></use>
     </svg>
 
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">Форма обратной связи</h1>
     <section>
-
       <form class="form" action="" method="get">
-
         <div class="form__title-wrapper">
-          <b class="form__title">Оставьте свой отзыв</b>
+          <b class="form__title form__title--main">Оставьте свой отзыв</b>
           <p class="form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами
             достопримечательностях</p>
         </div>
         <div class="form__wrapper-contact">
-          <div class="form__wrapper-user form__wrapper-user--left">
-            <b class="form__title">Представьтесь:</b>
+          <div class="form__wrapper form__wrapper--user form__wrapper--left">
+            <b class="form__title form__title--left">Представьтесь:</b>
             <label class="form__label " for="user-name">Имя*:</label>
             <input class="form__input form__input-text-black" type="text" name="username" id="user-name"
               placeholder="Имя" value="Пётр">
@@ -86,8 +84,8 @@
             <input class="form__input form__input-text-black" type="text" name="userpatronymic" id="user-patronymic"
               placeholder="Отчество" value="Викторович">
           </div>
-          <div class="form__wrapper-user form__wrapper-user--right">
-            <b class="form__title">Контактная информация:</b>
+          <div class="form__wrapper form__wrapper--right">
+            <b class="form__title form__title--right">Контактная информация:</b>
             <label class="form__label" for="user-phone">Контактный телефон*:</label>
             <div class="form__input-wrapper form__input-wrapper--phone">
               <input class="form__input form__input-text-grey" type="tel" name="userphone" id="user-phone"
@@ -100,7 +98,7 @@
             </div>
           </div>
         </div>
-        <div class="form__wrapper-user form__wrapper-user--radio">
+        <div class="form__wrapper form__wrapper--radio">
           <b class="form__title form__title-filter form__title-decoration form__title-decoration--radio">Ваше общее
             впечатление:</b>
           <ul class="form__input-radio-wrapper">
@@ -127,7 +125,7 @@
             </li>
           </ul>
         </div>
-        <div class="form__wrapper-user form__wrapper-user--checkbox">
+        <div class="form__wrapper form__wrapper--checkbox">
           <b class="form__title form__title-filter form__title-decoration form__title-decoration--checkbox">
             Посещённые
             <br>
@@ -164,16 +162,14 @@
             </li>
           </ul>
         </div>
-        <div class="form__wrapper-user">
+        <div class="form__wrapper form__wrapper--comment">
           <b class="form__title form__title-decoration form__title-decoration--textarea">Опишите свои эмоции:</b>
           <textarea class="form__input-textarea" name="user-impression-text"
             placeholder="Опишите подробно все свои восторги"></textarea>
           <div class="form__submit-wrapper">
             <button class="form__submit button" type="submit">Отправить отзыв</button>
             <p class="form__legend">
-              <small>
-                * — Обязательные поля
-              </small>
+              * — Обязательные поля
             </p>
           </div>
         </div>
@@ -217,7 +213,7 @@
           <span class="social__copyright__text">Разработано</span>
           <a class="social__copyright__link link-copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="35">
-              <use href="./img/sprite.svg#htmlacademy"></use>
+              <use href="./img/sprite.svg#icon-htmlacademy"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
@@ -225,24 +221,27 @@
       </div>
 
     </footer>
-
+  </main>
+  <div class="modal-background">
     <section class="modal modal__error">
       <h2 class="visually-hidden">Предупреждение о заполнении обязательных полей</h2>
-      <b class="modal__title">Что-то пошло не так!</b>
+      <b class="modal__title">Что-то пошло <br class="tablet-break desktop-break" />не так!</b>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего Вы забыли их заполнить</p>
-      <button class="modal__button-error button" type="submit">OK</button>
+      <button class="modal__button modal__button-error button" type="submit">OK</button>
     </section>
+  </div>
+  <div class="modal-background">
     <section class="modal modal__correct">
       <h2 class="visually-hidden">Сообщение об отправке отзыва</h2>
       <b class="modal__title">Ваш отзыв отправлен!</b>
-      <p class="modal__text">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам,
-        в ближайшее время мы опубликуем его на сайте.</p>
-      <div class="modal__button-correct-wrapper">
-        <button class="modal__button-correct button" type="submit">Закрыть окно</button>
+      <p class="modal__text">Спасибо за Ваше участие, Ваш <br class="mobile-break" />отзыв уже поступил к нам.
+        <br class="mobile-break tablet-break desktop-break" />
+        в ближайшее время мы <br class="mobile-break" />опубликуем его на сайте.</p>
+      <div class="modal__button modal__button-correct-wrapper">
+        <button class="modal__button modal__button-correct button" type="submit">Закрыть окно</button>
       </div>
     </section>
-
-  </main>
+  </div>
   <script src="js/script.js"></script>
 </body>
 
