@@ -33,11 +33,11 @@
   z-index: 4;
 }
 
-.modal__error {
+.modal--error {
   box-sizing: border-box;
 }
 
-.modal__correct {
+.modal--correct {
   box-sizing: border-box;
 }
 
@@ -59,7 +59,7 @@
   text-align: center;
 }
 
-.modal__error .modal__text {
+.modal--error .modal__text {
   margin-top: 26px;
 }
 
@@ -79,7 +79,7 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .modal__error {
+  .modal--error {
     width: 320px;
     padding: 45px 41px 35px;
     top: 116px;
@@ -87,7 +87,7 @@
     transform: translateX(-50%);
   }
 
-  .modal__error .modal__text {
+  .modal--error .modal__text {
     margin-bottom: 28px;
   }
 
@@ -95,7 +95,7 @@
     width: 180px;
   }
 
-  .modal__correct {
+  .modal--correct {
     width: 320px;
     padding: 39px 37px 30px;
     top: 401px;
@@ -103,7 +103,7 @@
     transform: translateX(-50%);
   }
 
-  .modal__correct .modal__text {
+  .modal--correct .modal__text {
     margin-top: 26px;
     margin-bottom: 50px;
   }
@@ -124,7 +124,7 @@
     font-size: var(--size-L);
   }
 
-  .modal__error {
+  .modal--error {
     width: 400px;
     padding: 52px 46px 49px;
     top: 283px;
@@ -141,11 +141,11 @@
     width: 272px;
   }
 
-  .modal__error .modal__text {
+  .modal--error .modal__text {
     margin-bottom: 47px;
   }
 
-  .modal__correct {
+  .modal--correct {
     width: 640px;
     padding: 48px 97px 0;
     min-height: 347px;
@@ -154,7 +154,7 @@
     transform: translateX(-50%);
   }
 
-  .modal__correct .modal__text {
+  .modal--correct .modal__text {
     margin-bottom: 53px;
     margin-top: 20px;
   }
@@ -171,17 +171,17 @@
 }
 
 @media (min-width: @desktop-width) {
-  .modal__correct .modal__text {
+  .modal--correct .modal__text {
     margin-top: 24px;
   }
 
-  .modal__error {
+  .modal--error {
     top: 244px;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .modal__correct {
+  .modal--correct {
     padding-top: 46px;
     top: 145px;
     left: 50%;
