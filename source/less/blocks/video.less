@@ -27,6 +27,25 @@
   text-transform: uppercase;
 }
 
+.video__wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video__button {
+  position: absolute;
+  background-image: url("../img/video-button.svg");
+  background-color: transparent;
+  width: 48px;
+  height: 55px;
+  top: 63px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  border: none;
+}
+
 .video__item {
   max-width: 800px;
   width: 100%;
@@ -37,6 +56,10 @@
 @media (min-width: @tablet-width) {
   .video__title {
     font-size: 30px;
+  }
+
+  .video__button {
+    top: 223px;
   }
 
   .video__item {
