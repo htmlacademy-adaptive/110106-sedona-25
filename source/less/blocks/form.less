@@ -121,7 +121,7 @@
   }
 
   .form__title-decoration {
-    padding: 0 123px;
+    padding: 0 23px;
   }
 
   .form__title-decoration--radio::before {
@@ -154,7 +154,7 @@
     background-color: var(--basik-grey-line-decoration);
     top: 50%;
     transform: translateY(-50%);
-    left: -84px;
+    left: -100px;
   }
 
   .form__title-decoration--checkbox::after {
@@ -165,7 +165,7 @@
     background-color: var(--basik-grey-line-decoration);
     top: 50%;
     transform: translateY(-50%);
-    right: -120px;
+    right: -100px;
   }
 
   .form__title-decoration--textarea::before {
@@ -384,8 +384,9 @@
 
 @media (min-width: @desktop-width) {
   .form__input-radio-wrapper {
-    flex-wrap: nowrap;
-    margin-right: -18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
   }
 }
 
